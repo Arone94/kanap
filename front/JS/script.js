@@ -35,26 +35,20 @@ async function createProducts() {
             productImg.alt = product[i].altTxt;
             console.log("élément Img créé");
 
-            //Créer l'élément "h3"
+            //Créer l'élément "h3" pour le titre
             let productName = document.createElement("h3");
             productArticle.appendChild(productName);
             productName.classList.add("productName");
             productName.innerHTML = product[i].name;
+            console.log("élément h3 créé");
 
-        
-
-
-
-        
-
-
-
+            //Créer l'élément "p" pour la description
+            let productDescription = document.createElement("p");
+            productArticle.appendChild(productDescription);
+            productDescription.classList.add("productDescription");
+            productDescription.innerHTML = product[i].description;
+            console.log("élément p créé");
         }
-
-
-
     })
-
-
-
 }
+console.log("Les produits créés");
