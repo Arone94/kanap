@@ -140,7 +140,7 @@ function getTotals(){
     productTotalPrice.innerHTML = totalPrice;
 }
 getTotals();
-
+console.log(getTotals);
 
 function modifyQtt() {
     let qttModif = document.querySelectorAll(".itemQuantity");
@@ -166,6 +166,7 @@ function modifyQtt() {
     }
 }
 modifyQtt();
+console.log(modifyQtt);
 
 //Instauration formulaire avec regex
 function getForm() {
@@ -258,6 +259,7 @@ function getForm() {
     };
     }
 getForm();
+console.log(getForm);
 
 function postForm() {
     const order = document.getElementById('order');
@@ -308,3 +310,4 @@ function postForm() {
   }); // fin eventListener postForm
   } // fin envoi du formulaire postForm
   postForm();
+  console.log(postForm);

@@ -1,6 +1,8 @@
 //Récupérer l’id du produit à afficher via les paramètres de l'url
 const idProduct = new URL(window.location.href).searchParams.get("id");
 
+console.log(idProduct);
+
 //Récupération des sélecteurs pour les futurs modifications
 let titleProduct = document.getElementById("title");
 let priceProduct = document.getElementById("price");
@@ -31,7 +33,8 @@ async function getArticle() {
            color.setAttribute("value", product.colors[i]);
            color.innerHTML = product.colors[i];
            colorsProduct.appendChild(color);
-       }  
+       }
+       console.log(getArticle);
    });          
 } 
 
