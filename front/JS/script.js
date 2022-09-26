@@ -9,8 +9,10 @@ createProducts();
 async function getProducts() {
     let products = await fetch("http://localhost:3000/api/products");
     console.log("Produits récupérés avec succès")
-    return products.json()
+    return products.json();
 };
+
+
 
 async function createProducts() {
     let result = await getProducts()

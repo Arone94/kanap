@@ -35,7 +35,7 @@ async function getArticle() {
    });          
 } 
 
-// Ajouté un article au panier
+// Ajouter un article au panier
 let addToCartBtn = document.getElementById("addToCart");
 addToCartBtn.addEventListener("click", addToCart);
 
