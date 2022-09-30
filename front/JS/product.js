@@ -44,7 +44,7 @@ addToCartBtn.addEventListener("click", addToCart);
 
 function addToCart() {
 
-    const colorChoice = document. querySelector("#colors");
+    const colorChoice = document.querySelector("#colors");
     const quantityChoice = document.querySelector("#quantity");
 
     if (quantityChoice.value > 0 && quantityChoice.value <=100 && quantityChoice.value != 0 && colorChoice.value != 0) { 
